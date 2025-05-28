@@ -1,0 +1,4 @@
+train: ../Dataset/train/images
+val: ../Dataset/valid/images
+nc: 5
+names: ['Scissors', 'Folding Knife', 'Straight Knife', 'Utility Knife', 'Multitool Knife']
