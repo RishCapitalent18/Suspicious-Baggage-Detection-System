@@ -1,70 +1,77 @@
-# Suspicious Baggage Detection System
+# 🎯 Suspicious Baggage Detection System
 
-This project implements a real-time suspicious item detection system using YOLOv5 for security screening applications. The system can detect and classify various potentially dangerous items in baggage or security screening images.
+A real-time baggage screening solution powered by **YOLOv5**, this project detects and classifies potentially dangerous items in security X-ray or baggage images. Built with a web-friendly UI using **Streamlit**, it’s a tool designed for rapid deployment and intuitive use in real-world scenarios.
 
-## Features
+---
 
-- Real-time object detection using YOLOv5
-- Web-based interface using Streamlit
-- Detection of multiple suspicious items:
-  - Scissors
+## 🚀 Features
+- 🔍 Real-time object detection with YOLOv5
+- 🌐 Web-based interface using Streamlit
+- 📦 Multi-class suspicious item detection:
+  - Scissors ✂️
   - Folding Knives
   - Straight Knives
   - Utility Knives
   - Multitool Knives
-- Interactive image upload and analysis
-- Visual results with bounding boxes and class labels
+- 🖼️ Interactive image upload and processing
+- 🧠 Visual results: bounding boxes + class labels
 
-## Installation
+---
 
-1. Clone this repository:
+## 🛠️ Installation
+1. **Clone the repository**:
 ```bash
 git clone https://github.com/yourusername/Suspicious_Baggage_Detection_ECE5554_Final_Project.git
 cd Suspicious_Baggage_Detection_ECE5554_Final_Project
 ```
 
-2. Install the required dependencies:
+2. **Install required dependencies**:
 ```bash
 pip install -r requirements.txt
 ```
 
-## Project Structure
+---
 
-- `app.py`: Main Streamlit application for the web interface
-- `best.pt`: Trained YOLOv5 model weights
-- `requirements.txt`: Python dependencies
-- `Dataset/`: Training and validation dataset
-- `runs/`: Directory containing detection results
-- `uploads/`: Temporary storage for uploaded images
-- `Abhi_Suspicious_Item_Detection_CNN_ECE5554.ipynb`: Jupyter notebook containing model training code
+## 📁 Project Structure
+```
+Suspicious_Baggage_Detection_ECE5554_Final_Project/
+├── app.py                            # Streamlit app interface
+├── best.pt                           # Trained YOLOv5 weights
+├── requirements.txt                  # Python dependencies
+├── Dataset/                          # Training and validation dataset
+├── uploads/                          # Temporary image uploads
+├── runs/                             # Detection output
+└── Abhi_Suspicious_Item_Detection_CNN_ECE5554.ipynb  # Training notebook
+```
 
-## Usage
+---
 
-1. Start the Streamlit application:
+## 💻 Usage
+1. **Launch the application**:
 ```bash
 streamlit run app.py
 ```
+2. Open browser at the local URL (typically `http://localhost:8501`)
+3. Upload a baggage scan image
+4. View:
+   - Original image
+   - Annotated image with detections
+   - List of detected items
 
-2. Open your web browser and navigate to the provided local URL (typically http://localhost:8501)
+---
 
-3. Upload an image using the file uploader
+## 🧠 Model Training
+- Based on YOLOv5 architecture
+- Trained on a custom dataset of suspicious items
+- See `Abhi_Suspicious_Item_Detection_CNN_ECE5554.ipynb` for:
+  - Dataset prep + augmentation
+  - Model configuration + tuning
+  - Training pipeline
+  - Model export
 
-4. The system will process the image and display:
-   - The original uploaded image
-   - The processed image with detected objects
-   - A list of detected suspicious items
+---
 
-## Model Training
-
-The model was trained using YOLOv5 on a custom dataset of suspicious items. The training process and code can be found in the Jupyter notebook `Abhi_Suspicious_Item_Detection_CNN_ECE5554.ipynb`. The training process includes:
-
-- Dataset preparation and augmentation
-- Model configuration and hyperparameter tuning
-- Training and validation
-- Model export and optimization
-
-## Dependencies
-
+## 🧾 Dependencies
 - streamlit
 - torch
 - torchvision
@@ -72,17 +79,29 @@ The model was trained using YOLOv5 on a custom dataset of suspicious items. The 
 - matplotlib
 - pillow
 
-## Notes
+Install via:
+```bash
+pip install -r requirements.txt
+```
 
-- The system uses YOLOv5, a state-of-the-art object detection model
-- The model is optimized for real-time detection
-- The web interface is built using Streamlit for easy deployment and use
-- Detection results are saved in the `runs/detect` directory
+---
 
-## Contributing
+## 📌 Notes
+- Powered by YOLOv5 (Ultralytics)
+- Optimized for fast, accurate predictions
+- Frontend via Streamlit = no extra setup needed
+- Detection results saved in `runs/detect` for reference
 
-Feel free to submit issues, fork the repository, and create pull requests for any improvements.
+---
 
-## License
+## 🤝 Contributing
+We welcome contributions! Fork the repo, suggest enhancements, or submit a PR.
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+---
+
+## 🪪 License
+Licensed under the MIT License – see the [LICENSE](LICENSE) file.
+
+---
+
+> 🔒 *Enhancing security through smart, accessible AI.*
