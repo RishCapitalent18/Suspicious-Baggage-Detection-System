@@ -2,6 +2,9 @@
 
 A real-time baggage screening solution powered by **YOLOv5**, this project detects and classifies potentially dangerous items in security X-ray or baggage images. Built with a web-friendly UI using **Streamlit**, it’s a tool designed for rapid deployment and intuitive use in real-world scenarios.
 
+## Authors
+Abhishek Subramanian, Rishabh Karthik Ramesh and Rohan Praveen Chavan 
+
 ---
 
 ## 🚀 Features
